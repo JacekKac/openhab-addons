@@ -357,7 +357,8 @@ A value of 10 on a slider translates to -10dB below max volume (digital full sca
 
 ## Image / Snapshots
 
-There are a number of ways to use snapshots with this binding.
+There are a number of ways to use snapshots with this binding. You should check your camera UID firts. It should be only the last part of Thing UID:
+for Thing UID "ipcamera:dahua:192168059" your {cameraUID} will be "1922168059" and proper URL :  http://openhabIP:8080/ipcamera/1922168059/[...]`
 
 **Ways to use snapshots are:**
 
