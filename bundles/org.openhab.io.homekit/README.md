@@ -732,10 +732,10 @@ Such a mapping can be configured manually in MainUI on HomeKit metadata in the C
 ```yaml
 value: "Lock"
 config:
-  SECURE:
+  SECURED:
     - LOCK
     - LOCKED
-  UNSECURE:
+  UNSECURED:
     - UNLOCK
     - UNLOCKED
 ```
@@ -743,7 +743,7 @@ config:
 Or in a `.items` file:
 
 ```java
-String MyLock "My Lock" { homekit="Lock"[SECURE="LOCK","LOCKED", UNSECURE="UNLOCK","UNLOCKED"] }
+String MyLock "My Lock" { homekit="Lock"[SECURED="LOCK","LOCKED", UNSECURED="UNLOCK","UNLOCKED"] }
 ```
 
 All accessories support the following characteristics that can be set via metadata or linked to a String item:
